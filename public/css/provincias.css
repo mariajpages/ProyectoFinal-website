@@ -1,0 +1,24 @@
+
+*{
+     box-sizing: border-box;
+}
+    
+body {
+    margin: 0; 
+    background-color:whitesmoke;
+    font-family: 'Merienda', cursive;
+    font-family: 'Satisfy', cursive;
+}
+    
+.actividades-flex {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.icon-actividades {
+    max-width: 30%;
+    text-align: center;
+
+}
