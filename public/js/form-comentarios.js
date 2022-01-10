@@ -1,7 +1,7 @@
 const formComentarios = document.querySelector('form');
 
 // console.log(form)
-const url = 'https://alctravel-website.herokuapp.com/pagina-principal'
+const url = 'https://alctravel-website.herokuapp.com'
 
 formComentarios.addEventListener('submit', (info)=>{
     info.preventDefault()
