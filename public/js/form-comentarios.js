@@ -1,9 +1,9 @@
-const form = document.querySelector('form');
+const formComentarios = document.querySelector('form');
 
 // console.log(form)
 const url = 'https://alctravel-website.herokuapp.com/pagina-principal'
 
-form.addEventListener('submit', (info)=>{
+formComentarios.addEventListener('submit', (info)=>{
     info.preventDefault()
     console.log('Estoy funcionando')
 
