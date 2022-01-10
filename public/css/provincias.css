@@ -12,13 +12,41 @@ body {
     
 .actividades-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
+    color: blue;
+    text-align: center;
+    align-items: center;
 }
 
+.h5-actividades {
+    color: blue;
+    font-size: 25px;
+}
+
+
 .icon-actividades {
-    max-width: 30%;
+    max-width: 10%;
     text-align: center;
 
+}
+
+.img-actividades {
+    max-width: 500px;
+    object-fit: fill; 
+    text-align: cover;
+    border: 2px solid #3e84cf ;
+    transition: transform 5ms ease;
+    height: 300px;
+}
+
+.img-experiencias:hover{
+    transform: scale(2);
+    transform-origin: center;
+}
+
+.custom-p-select {
+    font-size: 25px;
+    
 }
