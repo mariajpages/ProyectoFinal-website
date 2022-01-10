@@ -1,0 +1,599 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0; 
+    background-color:whitesmoke;
+    font-family: 'Merienda', cursive;
+    font-family: 'Satisfy', cursive;
+}
+
+nav {
+    background-color: #d7e2fb;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.nav-main {
+    margin: 0 auto;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    list-style: none;
+}
+.list-container-logo{
+    max-width: 30%;
+    margin: 0 auto;
+}
+.list-container {
+    width: 70%;
+    padding-top: 10px;
+}
+
+.img-logo {
+    text-align: center;
+    max-width: 40%;
+}
+
+.main-nav-ul-menu {
+    align-items: center;
+    display: flex;
+    justify-content:space-between;
+    list-style: none;
+    max-width: 100%;
+    margin: 20px 0; 
+}
+
+.main-nav-ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    max-width: 100%;
+}
+
+.menu{
+    color: #183164;
+    text-decoration: none;
+    text-align: center; 
+    font-family: 'Merienda', cursive;
+    transition: transform 2s ease;
+}
+
+.menu:hover {
+    color: #3b6fd6;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+a {
+    display: inline block;
+    padding: 10px;
+}
+.language{
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.section-header{
+    margin: 0 auto;
+}
+
+.header-content{
+    background-image: url('../Img/salinas-grandes-paisajejpg.jpg');
+    background-position-y: 80%;
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px;
+}
+
+h1 {
+    max-width: 1200px;
+    margin: 50px auto;
+    list-style: none;
+    font-family: 'Satisfy', cursive;
+    font-style: italic;
+    font-size: 60px;
+    color: #043468;
+    text-align: center;
+    padding: 50px 50px 90px 50px;
+}
+
+.header-flex{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: -5px;
+}
+.h2-header{
+    color:#2865a7;
+    font-family: 'Satisfy', cursive;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.flecha-abajo{
+   text-align: center;
+   padding: 10px;
+}
+
+.container-redes{
+    position: fixed;
+    right: 5px;
+    bottom: 50px;
+    max-width: 100px;
+    border-radius: 10px 10px;
+    list-style: square;
+    text-align: center;
+}
+
+.content-redes{
+    list-style: none;
+    max-width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.redes{
+    
+    text-align: center;
+    max-width: 100%;
+    padding: 5px;
+}
+
+.custom-inf{
+    max-width: 768px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.custom-explain{
+    width: 30%;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #043468;
+    font-family: 'Merienda', cursive;
+}
+
+.vta{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 10px auto;
+    padding: 50px; 
+}
+
+.title-vta{
+    max-width: 30%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.vecctor-vta{
+    text-align: center;
+    margin: 0 auto;
+}
+
+h2 {
+    max-width: 1200px;
+    color:#084586;
+    font-family: 'Satisfy', cursive;
+    font-style: italic;
+    font-size: 40px;
+    text-align: center;
+}
+
+.p-destinos{
+    font-family: 'Merienda', cursive;
+}
+
+.img-destinos{
+    width: 150px;
+    height: 400px;
+}
+
+h5{
+    color: #daebfc;
+    font-weight: bold;
+    font-family: 'Merienda', cursive;
+}
+
+.button-destino {
+    display: inline-block;
+    font-size: 10px ;
+    font-family: 'Merienda', cursive;
+    padding: 10px 30px;
+    text-decoration: none;
+    margin: 10px 0 10px 10px;
+    background:#043468;
+    border-radius: 30px;
+    color:#dde9f5;
+}
+
+.experiencias-content{
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.experiencias {
+    width: 50%;
+    border-radius: 10px;
+    align-items: center;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.p-experiencias{
+    font-size: 20px;
+    color: rgb(22, 21, 21);
+    font-family: 'Merienda', cursive;
+}
+
+.custom-col > img {
+    width: 200px;
+}
+
+.img-experiencias{
+    max-width: 100%;
+    object-fit: cover; 
+    text-align: center;
+    border: 2px solid #3e84cf ;
+    transition: transform 5ms ease;
+    height: 200px;
+}
+
+.img-experiencias:hover{
+    transform: scale(2);
+    transform-origin: center;
+}
+
+.form-content{
+    max-width: 100%;
+    width: 500px;
+} 
+
+.contact-form {
+    max-width: 100%;
+    max-width: fit-content;
+    margin: 0;
+    background-color: #93b8e0;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #104680; 
+}
+
+.form-group{ 
+    margin: 20px 0;
+}
+
+.form-goup input, .form-group textarea {
+    display: block;
+    width: 100%;
+    padding: 5px 5 px;
+    font-size: 18px
+}
+
+.textarea {
+    resize: vertical;
+    font-family: 'Merienda', cursive;
+}
+
+.custom-comentarios{
+    align-content: center;
+
+}   
+.color-comentarios{
+    border-color: #043468 ;
+    background-color: #f0efef;
+}
+
+.text-comentarios{
+    color: #3c6590 ;
+}
+
+.card-title{
+    color: #043468 ;
+    font-family: 'Merienda', cursive;
+}
+
+.card-text{
+    font-family: 'Merienda', cursive;
+}
+
+.card-footer{
+    font-family: 'Merienda', cursive;
+}
+
+.nosotros-container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.nosotros-descripcion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.img-nosotros{
+    max-width: 60%;
+}
+
+.title-nosotros{
+    font-family: 'Merienda', cursive;
+    max-width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+.viajeras-container{
+    text-align: center;
+    padding: 30px 0;
+}
+.viajeras-title{
+    max-width: 30%;
+    margin: 10px;
+    font-family: 'Merienda', cursive;
+    font-size: 25px;
+    text-align: center;
+    color: #ebf5ff;
+    background-color: #022041;
+    border-radius: 10px;
+}
+
+.viajeras{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    align-items: center;
+    background-color:#63a4e9;
+    padding: 10px;
+}
+
+.img-viajeras{
+    max-width: 50%;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 60%;
+    text-align: center;
+}
+
+.p-viajeras{
+    font-size: 16px;
+    color: seashell;
+    font-family:'Merienda', cursive;
+}
+
+.anto{
+    background-color: #3b5b7a;
+}
+
+.footer{
+    background-color: #d7e2fb;;
+}
+
+.container-footer{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #d7e2fb;;
+    padding: 10px;
+}
+
+.footer-list{
+    display: flex;
+    justify-content: stretch;
+    color: #4184cc;
+    text-decoration: none;
+    text-align: left;
+}
+
+.footer-content-logo{
+    max-width: 50%;
+    list-style: none;
+    margin: 0 20px 0 20px;
+}
+
+.img-logo-footer{
+    max-width: 50%;
+    object-fit: cover;
+}
+
+.inf-contacto{
+    text-align: left;
+    list-style: none;
+    max-width: 50%;
+    margin: 0 20px 0 20px;
+    padding: 10px;
+    font-family: 'Merienda', cursive;
+}
+
+.whatsapp{
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+}
+.p-footer{
+    text-decoration: none;
+    color: #071f38 ;
+    font-family: 'Merienda', cursive;
+}
+.email {
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+}
+
+@media (max-width:1000px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+        text-align: center;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+        text-align: center;
+    }
+
+    .img-logo{
+        max-width:100%;
+    }
+
+    .main-nav-ul{
+        padding: 0;
+    }
+
+    .main-nav-ul-menu{
+        padding: 0;
+    }
+
+    .content-redes {
+        padding: 0;
+    }
+
+    .img-destinos {
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width:790px){
+    nav{
+        position: relative;
+        margin: 0 auto;
+    }
+    .container-nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .list-container-logo{
+        width: 100%;
+    }
+    
+    .list-container{
+        width: 100%;
+    }
+
+    .img-logo{
+        max-width:100%;
+    }
+    .main-nav-ul-menu{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .custom-inf {
+        width: 100% ;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .vta{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .img-destinos{
+        max-width: 100%;
+    }
+
+    .carousel{
+        z-index: -1;
+    }
+    .carousel-caption{
+        width: 100%;
+        align-content: center;
+    }
+       
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+        align-content: center;
+    }
+
+    .nosotros-descripcion{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .viajeras{
+        display: inline-block;
+        align-content: center;
+    }
+}
+
+@media (max-width:560px){
+
+    .list-container-logo{
+        width: 100%;
+        align-content: center;
+    }
+
+    .img-logo{
+        max-width: 100%;
+    }
+
+    .container-redes{
+        right: -5px;
+    }
+
+    .vta{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .title-vta{
+        max-width: 100%;
+    }
+
+    .footer-list{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer-content-logo{
+        text-align: center; 
+    }
+
+    .inf-contacto{
+        text-align: center;
+        /* align-content: center; */
+    }
+}
+
+
