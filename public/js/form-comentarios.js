@@ -1,10 +1,7 @@
-
-//Eventfento administrador
-
 const form = document.querySelector('form');
 
 // console.log(form)
-const url = 'https://alctravel.herokuapp.com/administrador'
+const url = 'https://alctravel-website.herokuapp.com/pagina-principal'
 
 form.addEventListener('submit', (info)=>{
     info.preventDefault()
@@ -28,10 +25,3 @@ form.addEventListener('submit', (info)=>{
    
     
 })
-
-
-
-
-
-
-// module.exports = {allActividadesCard}

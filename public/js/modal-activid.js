@@ -1,8 +1,4 @@
-const require = require('postman-request');
-
-const baseURL = 'https://alctravel.herokuapp.com/';
-
-// evento clicliable modal
+//Evento clicliable modal-actividad
 const actividadesJujuy = [
     {
         id:1,
@@ -46,3 +42,4 @@ allActividadesCard.forEach((el) => {
     });    
 
 });
+

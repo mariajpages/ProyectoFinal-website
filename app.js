@@ -59,7 +59,7 @@ app.get('/patagonia', (req, res) =>{
 })
 
 // // Custom Modules
-// const productsModule = require('./utils/products');
+const ModalActividadModule = require('./utils/products');
 
 // app.get('', (req, res) => {
 //     productsModule.getAllProducts((err, products) => {
