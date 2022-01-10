@@ -27,6 +27,26 @@ const actividadesJujuy = [
     }
 ];
 
+const modal = document.querySelector('.modal');
+const modalTitle = document.querySelector('.modal-title');
+const modalDescripton = document.querySelector('.modal-description');
+
+const mostrarModal = (dataId, text) => {
+    modal.classList.add('visible');
+    modalTitle.textContent = text;
+}
+ //fondo negro
+const fondoNegro = document.querySelector('.fondo-negro');
+const mostarFondo = () => {
+  fondoNegro.classList.add('visible');
+}
+
+//muestro fondo negro
+fondoNegro.addEventListener('click', () => {
+  modal.classList.remove('visible');
+  fondoNegro.classList.remove('visible');
+});
+
 const allActividadesCard = document.querySelectorAll('.actividades-card');
 
 allActividadesCard.forEach((el) => {
@@ -42,4 +62,14 @@ allActividadesCard.forEach((el) => {
     });    
 
 });
+
+    const products = document.querySelectorAll('.product');
+    for(let product of products) {
+      product.addEventListener('click', (e) => {
+        const dataId = e.currentTarget.dataset.id;
+        const text = e.currentTarget.textContent;
+        mostarFondo();
+        mostrarModal(dataId, text);
+      });
+    }
 

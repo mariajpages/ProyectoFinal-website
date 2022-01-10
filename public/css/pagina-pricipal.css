@@ -263,7 +263,7 @@ h5{
     object-fit: cover; 
     text-align: center;
     border: 2px solid #3e84cf ;
-    transition: transform 5ms ease;
+    transition: transform 1s ease;
     height: 200px;
 }
 
