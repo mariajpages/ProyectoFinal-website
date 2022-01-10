@@ -1,6 +1,6 @@
 const require = require('postman-request');
 
-const baseURL = 'http//localhost:3000';
+const baseURL = 'https://alctravel.herokuapp.com/';
 
 // evento clicliable modal
 const actividadesJujuy = [
