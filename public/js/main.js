@@ -11,15 +11,15 @@ formComentarios.addEventListener('submit', (info) => {
     const formDataJSON = Object.fromEntries(formData)
     console.log(formDataJSON)
 
-    fetch(url, {
+    fetch (url, {
         method: 'POST',
         body: JSON.stringify(formDataJSON),
         headers: {
             'Content-Type': 'application/json'
         }
 
-    })
-        .then((res) => {
+    })  .then(res => res.json())
+        .then((json) => {
             const agregarComentarios = document.getElementById('comentarios');
 
             for (i = 0; i < agregarComentarios.childElementCount; i++) {
