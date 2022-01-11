@@ -7,7 +7,7 @@ formComentarios.addEventListener('submit', (info) => {
     info.preventDefault()
     console.log('Estoy funcionando')
 
-    const formData = new FormData(form)
+    const formData = new FormData(formComentarios)
     const formDataJSON = Object.fromEntries(formData)
     console.log(formDataJSON)
 
@@ -46,5 +46,3 @@ formComentarios.addEventListener('submit', (info) => {
 
 
 })
-
-agregarComentarios();
