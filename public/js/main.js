@@ -23,8 +23,8 @@ formComentarios.addEventListener('submit', (info) => {
             const agregarComentarios = document.getElementById('comentarios');
 
             for (i = 0; i < agregarComentarios.childElementCount; i++) {
-                comentario = agregarComentarios.childNodes[i];
-                name = comentario.querySelector('.card-title').text;
+                item = agregarComentarios.childNodes[i];
+                names = item.querySelector('.card-title').text;
                 content = item.querySelector('.card-text').text;
                 Option = item.querySelector('.card-footer');
 
@@ -32,7 +32,7 @@ formComentarios.addEventListener('submit', (info) => {
                 p2 = document.createElement('p');
                 p3 = document.createElement('p');
 
-                n = document.createTextNode(name);
+                n = document.createTextNode(names);
                 c = document.createTextNode(content);
                 o = document.createTextNode(Option);
 
