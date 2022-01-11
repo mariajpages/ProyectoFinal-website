@@ -19,33 +19,32 @@ formComentarios.addEventListener('submit', (info) => {
         }
 
     })  
-        .then((res) => 
-        // {
-        //     const agregarComentarios = document.getElementById('comentarios');
+        .then((res) => {
+            const agregarComentarios = document.getElementById('comentarios');
 
-        //     for (i = 0; i < agregarComentarios.childElementCount; i++) {
-        //         item = agregarComentarios.childNodes[i];
-        //         names = item.querySelector('.card-title').text;
-        //         content = item.querySelector('.card-text').text;
-        //         Option = item.querySelector('.card-footer');
+            for (i = 0; i < agregarComentarios.childElementCount; i++) {
+                item = agregarComentarios.childNodes[i];
+                names = item.querySelector('.card-title').text;
+                content = item.querySelector('.card-text').text;
+                Option = item.querySelector('.card-footer');
 
-        //         p1 = document.createElement('p');
-        //         p2 = document.createElement('p');
-        //         p3 = document.createElement('p');
+                p1 = document.createElement('p');
+                p2 = document.createElement('p');
+                p3 = document.createElement('p');
 
-        //         n = document.createTextNode(names);
-        //         c = document.createTextNode(content);
-        //         o = document.createTextNode(Option);
+                n = document.createTextNode(names);
+                c = document.createTextNode(content);
+                o = document.createTextNode(Option);
 
-        //         p1.appendChild(n);
-        //         p2.appendChild(c);
-        //         p3.appendChild(o);
-        //         content.appendChild(p1);
-        //         content.appendChild(p2);
-        //         content.appendChild(p3);
-        //     }
-        console.log (res)
-        )
+                p1.appendChild(n);
+                p2.appendChild(c);
+                p3.appendChild(o);
+                content.appendChild(p1);
+                content.appendChild(p2);
+                content.appendChild(p3);
+            }
+        
+        })
         .catch((err) => console.log(err))
 
 
