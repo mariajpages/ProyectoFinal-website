@@ -19,7 +19,8 @@ formComentarios.addEventListener('submit', (info) => {
         }
 
     })  
-        // .then((res) => {
+        .then((res) => 
+        // {
         //     const agregarComentarios = document.getElementById('comentarios');
 
         //     for (i = 0; i < agregarComentarios.childElementCount; i++) {
@@ -44,7 +45,7 @@ formComentarios.addEventListener('submit', (info) => {
         //         content.appendChild(p3);
         //     }
         console.log (res)
-        })
+        )
         .catch((err) => console.log(err))
 
 
