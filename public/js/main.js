@@ -22,22 +22,26 @@ formComentarios.addEventListener('submit', (info) => {
         .then((res) => {
             const agregarComentarios = document.getElementById('comentarios');
 
-            for (i = 0; i < agregarComentarios; i++) {
-                item = items.childNodes[i];
-                title = item.querySelector('.slick-track .widget-title a').text;
-                subTitle = item.querySelector('.slick-track .entry-tags ul li a').text;
-                content = item.querySelector('.work-cover');
+            for (i = 0; i < agregarComentarios.childElementCount; i++) {
+                comentario = agregarComentarios.childNodes[i];
+                name = comentario.querySelector('.card-title').text;
+                content = item.querySelector('.card-text').text;
+                Option = item.querySelector('.card-footer');
 
                 p1 = document.createElement('p');
                 p2 = document.createElement('p');
+                p3 = document.createElement('p');
 
-                t = document.createTextNode(title);
-                b = document.createTextNode(subTitle);
+                n = document.createTextNode(name);
+                c = document.createTextNode(content);
+                o = document.createTextNode(Option);
 
-                p1.appendChild(t);
-                p2.appendChild(b);
+                p1.appendChild(n);
+                p2.appendChild(c);
+                p3.appendChild(o);
                 content.appendChild(p1);
                 content.appendChild(p2);
+                content.appendChild(p3);
 
             }
         })
