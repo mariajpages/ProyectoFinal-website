@@ -28,12 +28,12 @@
 // ];
 
 
-const modal = document.querySelector('.modal');
+const modalVisble = document.querySelector('.modal');
 const modalTitle = document.querySelector('.modal-title');
 const modalDescripton = document.querySelector('.modal-description');
 
 const mostrarModal = (dataId, text) => {
-    modal.classList.add('visible');
+    modalVisble.classList.add('visible');
     modalTitle.textContent = text;
 }
  //fondo negro
@@ -44,7 +44,7 @@ const mostarFondo = () => {
 
 //muestro fondo negro
 fondoNegro.addEventListener('click', () => {
-  modal.classList.remove('visible');
+  modalVisble.classList.remove('visible');
   fondoNegro.classList.remove('visible');
 });
 
@@ -64,13 +64,13 @@ allActividadesCard.forEach((el) => {
 
 });
 
-    const products = document.querySelectorAll('.product');
-    for(let product of products) {
-      product.addEventListener('click', (e) => {
-        const dataId = e.currentTarget.dataset.id;
-        const text = e.currentTarget.textContent;
-        mostarFondo();
-        mostrarModal(dataId, text);
-      });
-    }
+    // const products = document.querySelectorAll('.product');
+    // for(let product of products) {
+    //   product.addEventListener('click', (e) => {
+    //     const dataId = e.currentTarget.dataset.id;
+    //     const text = e.currentTarget.textContent;
+    //     mostarFondo();
+    //     mostrarModal(dataId, text);
+    //   });
+    // }
 
