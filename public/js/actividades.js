@@ -28,9 +28,9 @@
 // ];
 
 
-const modalVisble = document.querySelector('.modal');
-const modalTitle = document.querySelector('.modal-title');
-const modalDescripton = document.querySelector('.modal-description');
+let modalVisble = document.querySelector('.modal');
+let modalTitle = document.querySelector('.modal-title');
+let modalDescripton = document.querySelector('.modal-description');
 
 const mostrarModal = (dataId, text) => {
     modalVisble.classList.add('visible');
