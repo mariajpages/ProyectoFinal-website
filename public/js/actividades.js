@@ -27,6 +27,7 @@ const actividadesJujuy = [
     }
 ];
 
+const url = 'https://alctravel.herokuapp.com/buenosaires'
 const modal = document.querySelector('.modal');
 const modalTitle = document.querySelector('.modal-title');
 const modalDescripton = document.querySelector('.modal-description');
