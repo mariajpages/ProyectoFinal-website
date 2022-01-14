@@ -1,5 +1,5 @@
 // Evento clicliable modal-actividad
-const actividadesJujuy = [
+actividadesJujuy = [
     {
         id:1,
         title:"Purmamarca",
