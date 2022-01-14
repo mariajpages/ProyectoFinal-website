@@ -130,8 +130,8 @@
           });
 
           const imgActividades = document.querySelectorAll('.img-actividades');
-          for (let imgActividades of actividadesJujuy) {
-            product.addEventListener('click', (e) => {
+          for (let imgActividad of imgActividades) {
+            imgActividad.addEventListener('click', (e) => {
               const dataId = e.currentTarget.dataset.id;
               const text = e.currentTarget.textContent;
               mostarFondo();
@@ -235,7 +235,7 @@
     crossorigin="anonymous"></script>
 
 
-  <script src="../../utils/modal-actividad.js"></script>
+  <script src="../../modal-actividad.js"></script>
 
 </body>
 
