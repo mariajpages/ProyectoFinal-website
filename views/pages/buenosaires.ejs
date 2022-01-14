@@ -119,8 +119,8 @@
               const id = infoEvent.target.dataset.id;
               const ActividadFiltrada = actividadesJujuy.filter((el) => el.id == id);
 
-              // const modalTitle = document.querySelector('.modal-title');
-              // const modalDescription = document.querySelector('.modal-description');
+              const modalTitle = document.querySelector('.modal-title');
+              const modalDescription = document.querySelector('.modal-description');
 
               modalTitle.textContent = ActividadFiltrada[0].title;
               modalDescription.textContent = ActividadFiltrada[0].description;
@@ -128,15 +128,16 @@
 
           });
 
-            // const products = document.querySelectorAll('.product');
-            // for(let product of products) {
-            //   product.addEventListener('click', (e) => {
-            //     const dataId = e.currentTarget.dataset.id;
-            //     const text = e.currentTarget.textContent;
-            //     mostarFondo();
-            //     mostrarModal(dataId, text);
-            //   });
-            
+          const imgActividades = document.querySelectorAll('.img-actividades');
+          for (let imgActividades of actividadesJujuy) {
+            product.addEventListener('click', (e) => {
+              const dataId = e.currentTarget.dataset.id;
+              const text = e.currentTarget.textContent;
+              mostarFondo();
+              mostrarModal(dataId, text);
+            });
+
+          }
         </script>
         <div class="header-flex">
           <h5 class="h2-header">Alojamiento</h5>
