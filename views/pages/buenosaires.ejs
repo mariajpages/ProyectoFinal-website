@@ -97,7 +97,7 @@
           const modalDescripton = document.querySelector('.modal-description');
 
           const mostrarModal = (dataId, text) => {
-            modalVisble.classList.add('visible');
+            modal.classList.add('visible');
             modalTitle.textContent = text;
           }
           //fondo negro
@@ -108,7 +108,7 @@
 
           //muestro fondo negro
           fondoNegro.addEventListener('click', () => {
-            modalVisble.classList.remove('visible');
+            modal.classList.remove('visible');
             fondoNegro.classList.remove('visible');
           });
 
