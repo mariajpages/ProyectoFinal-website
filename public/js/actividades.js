@@ -28,49 +28,49 @@ actividadesJujuy = [
 ];
 
 
-const modal = document.querySelector('.modal');
-const modalTitle = document.querySelector('.modal-title');
-const modalDescripton = document.querySelector('.modal-description');
+// const modal = document.querySelector('.modal');
+// const modalTitle = document.querySelector('.modal-title');
+// const modalDescripton = document.querySelector('.modal-description');
 
-const mostrarModal = (dataId, text) => {
-    modalVisble.classList.add('visible');
-    modalTitle.textContent = text;
-}
- //fondo negro
-const fondoNegro = document.querySelector('.fondo-negro');
-const mostarFondo = () => {
-  fondoNegro.classList.add('visible');
-}
+// const mostrarModal = (dataId, text) => {
+//     modalVisble.classList.add('visible');
+//     modalTitle.textContent = text;
+// }
+//  //fondo negro
+// const fondoNegro = document.querySelector('.fondo-negro');
+// const mostarFondo = () => {
+//   fondoNegro.classList.add('visible');
+// }
 
-//muestro fondo negro
-fondoNegro.addEventListener('click', () => {
-  modalVisble.classList.remove('visible');
-  fondoNegro.classList.remove('visible');
-});
+// //muestro fondo negro
+// fondoNegro.addEventListener('click', () => {
+//   modalVisble.classList.remove('visible');
+//   fondoNegro.classList.remove('visible');
+// });
 
-const allActividadesCard = document.querySelectorAll('.actividades-card');
+// const allActividadesCard = document.querySelectorAll('.actividades-card');
 
-allActividadesCard.forEach((el) => {
-    el.addEventListener('click', (infoEvent) => {
-        const id = infoEvent.target.dataset.id;
-        const ActividadFiltrada = actividadesJujuy.filter((el) => el.id == id);
+// allActividadesCard.forEach((el) => {
+//     el.addEventListener('click', (infoEvent) => {
+//         const id = infoEvent.target.dataset.id;
+//         const ActividadFiltrada = actividadesJujuy.filter((el) => el.id == id);
 
-        // const modalTitle = document.querySelector('.modal-title');
-        // const modalDescription = document.querySelector('.modal-description');
+//         // const modalTitle = document.querySelector('.modal-title');
+//         // const modalDescription = document.querySelector('.modal-description');
         
-        modalTitle.textContent = ActividadFiltrada[0].title;
-        modalDescription.textContent = ActividadFiltrada[0].description;
-    });    
+//         modalTitle.textContent = ActividadFiltrada[0].title;
+//         modalDescription.textContent = ActividadFiltrada[0].description;
+//     });    
 
-});
+// });
 
-    // const products = document.querySelectorAll('.product');
-    // for(let product of products) {
-    //   product.addEventListener('click', (e) => {
-    //     const dataId = e.currentTarget.dataset.id;
-    //     const text = e.currentTarget.textContent;
-    //     mostarFondo();
-    //     mostrarModal(dataId, text);
-    //   });
-    // }
+//     // const products = document.querySelectorAll('.product');
+//     // for(let product of products) {
+//     //   product.addEventListener('click', (e) => {
+//     //     const dataId = e.currentTarget.dataset.id;
+//     //     const text = e.currentTarget.textContent;
+//     //     mostarFondo();
+//     //     mostrarModal(dataId, text);
+//     //   });
+//     // }
 

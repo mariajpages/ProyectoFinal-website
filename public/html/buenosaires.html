@@ -48,14 +48,14 @@
         </div>
       </div>
     </nav>
-    <div class= section-header>
+    <div class=section-header>
       <h1 class="h1-actividades">Buenos Aires</h1>
     </div>
   </header>
   <main>
-    <section >
+    <section>
       <div class="actividades">
-        <div >
+        <div>
           <h2> Cuidad de Buenos aires </h2>
           <div class="actividades-flex ">
             <h5 class="h5-actividades">Actividades</h5>
@@ -65,7 +65,8 @@
         <div class="container-actividades">
           <div class="row a align-content-center my-5 md-4">
             <div class="col-md-4  text-center">
-              <img data-id="1" class="img-actividades " src="../Img/cuidad-de-buenos-aires.jpg" alt="Cuidad de buenos aires">
+              <img data-id="1" class="img-actividades " src="../Img/cuidad-de-buenos-aires.jpg"
+                alt="Cuidad de buenos aires">
             </div>
             <div class="col-md-4   text-center">
               <img data-id="2" class="img-actividades" src="../Img/tandil.jpg" alt="Tandil">
@@ -91,6 +92,53 @@
           <p class="modal-description"></p>
         </div>
         <div class="fondo-negro"></div>
+        <script>
+          const modal = document.querySelector('.modal');
+          const modalTitle = document.querySelector('.modal-title');
+          const modalDescripton = document.querySelector('.modal-description');
+
+          const mostrarModal = (dataId, text) => {
+            modalVisble.classList.add('visible');
+            modalTitle.textContent = text;
+          }
+          //fondo negro
+          const fondoNegro = document.querySelector('.fondo-negro');
+          const mostarFondo = () => {
+            fondoNegro.classList.add('visible');
+          }
+
+          //muestro fondo negro
+          fondoNegro.addEventListener('click', () => {
+            modalVisble.classList.remove('visible');
+            fondoNegro.classList.remove('visible');
+          });
+
+          const allActividadesCard = document.querySelectorAll('.actividades-card');
+
+          allActividadesCard.forEach((el) => {
+            el.addEventListener('click', (infoEvent) => {
+              const id = infoEvent.target.dataset.id;
+              const ActividadFiltrada = actividadesJujuy.filter((el) => el.id == id);
+
+              // const modalTitle = document.querySelector('.modal-title');
+              // const modalDescription = document.querySelector('.modal-description');
+
+              modalTitle.textContent = ActividadFiltrada[0].title;
+              modalDescription.textContent = ActividadFiltrada[0].description;
+            });
+
+          });
+
+            // const products = document.querySelectorAll('.product');
+            // for(let product of products) {
+            //   product.addEventListener('click', (e) => {
+            //     const dataId = e.currentTarget.dataset.id;
+            //     const text = e.currentTarget.textContent;
+            //     mostarFondo();
+            //     mostrarModal(dataId, text);
+            //   });
+            
+        </script>
         <div class="header-flex">
           <h5 class="h2-header">Alojamiento</h5>
           <img class="icon-aloamiento" src="../Img/icon-alojamiento.svg" alt="Alojamiento"></a>
@@ -115,7 +163,7 @@
               <label class="custom-p-select">
                 <input type="checkbox" name="Alojamiento" value="Cabaña"> Cabaña
               </label>
-            </div> 
+            </div>
           </div>
         </div>
         <div class="header-flex">
