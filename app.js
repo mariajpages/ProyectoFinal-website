@@ -36,13 +36,11 @@ app.get('/administrador', (req, res) => {
 });
 
 app.get('/destinos', (req, res) =>{
-    res.render('./pages/destinos');
-    // {aboutStartingText: buenosairesContent}
+    res.render('./pages/destinos', {aboutStartingText: buenosairesContent});
 })
 
 app.get('/buenosaires', (req, res) =>{
-    res.render('./pages/buenosaires');
-    // {aboutStartingText: buenosairesContent}
+    res.render('./pages/buenosaires', {aboutStartingText: buenosairesContent});
 })
 app.get('/cordoba', (req, res) =>{
     res.render('./pages/cordoba', {aboutStartingText: cordobaContent});
