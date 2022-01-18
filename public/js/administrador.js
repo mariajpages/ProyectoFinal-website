@@ -33,5 +33,3 @@ form.addEventListener('submit', (info)=>{
 
 
 
-
-module.exports = {allActividadesCard}
