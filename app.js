@@ -39,7 +39,7 @@ app.get('./destinos', (req, res) =>{
     res.render('./pages/destinos');
 })
 
-app.get('./buenosaires', (req, res) =>{
+app.get('/buenosaires', (req, res) =>{
     res.render('./pages/buenosaires', {aboutStartingText: buenosairesContent});
     
     
