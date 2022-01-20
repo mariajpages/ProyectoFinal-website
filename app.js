@@ -29,35 +29,35 @@ app.get('', (req, res) =>{
 
 });
 
-app.get('/administrador', (req, res) => {
+app.get('./administrador', (req, res) => {
 
     res.render('./pages/administrador')
     
 });
 
-app.get('/destinos', (req, res) =>{
+app.get('./destinos', (req, res) =>{
     res.render('./pages/destinos');
 })
 
-app.get('/buenosaires', (req, res) =>{
+app.get('./buenosaires', (req, res) =>{
     res.render('./pages/buenosaires');
     // , {aboutStartingText: buenosairesContent}
     
 })
-app.get('/cordoba', (req, res) =>{
+app.get('./cordoba', (req, res) =>{
     res.render('./cordoba');
 })
-app.get('/cuyo', (req, res) =>{
+app.get('./cuyo', (req, res) =>{
     res.render('./pages/cuyo');
 })
-app.get('/litoral', (req, res) =>{
+app.get('./litoral', (req, res) =>{
     res.render('./pages/litoral');
 })
-app.get('/noroeste', (req, res) =>{
+app.get('./noroeste', (req, res) =>{
     res.render('./pages/noroeste');
     // , {aboutStartingText: noroesteContent})
 })
-app.get('/patagonia', (req, res) =>{
+app.get('./patagonia', (req, res) =>{
     res.render('./pages/patagonia');
 })
 
