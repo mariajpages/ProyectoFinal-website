@@ -13,15 +13,15 @@ app.set('view engine', 'ejs');
 const publicURL = path.join(__dirname, 'public');
 
 app.use(express.static(publicURL));
-const administradorContent ="Administrador";
-const destinosContent ="Destinos";
-const resumenContent ="Resumen";
-const buenosairesContent ="Buenos Aires";
-const noroesteContent ="Noroeste";
-const litoralContent ="Litoral";
-const cuyoContent ="Cuyo";
-const cordobaContent ="Còrdoba";
-const patagoniaContent ="Patagonia";
+// const administradorContent ="Administrador";
+// const destinosContent ="Destinos";
+// const resumenContent ="Resumen";
+// const buenosairesContent ="Buenos Aires";
+// const noroesteContent ="Noroeste";
+// const litoralContent ="Litoral";
+// const cuyoContent ="Cuyo";
+// const cordobaContent ="Còrdoba";
+// const patagoniaContent ="Patagonia";
 
 
 app.get('', (req, res) =>{
@@ -31,7 +31,7 @@ app.get('', (req, res) =>{
 
 app.get('/administrador', (req, res) => {
 
-    res.render('./pages/administrador', {aboutStartingText: administradorContent});
+    res.render('./pages/administrador';
     
 });
 
@@ -40,7 +40,8 @@ app.get('/destinos', (req, res) =>{
 })
 
 app.get('/buenosaires', (req, res) =>{
-    res.send('./pages/buenosaires', {aboutStartingText: buenosairesContent});
+    res.render('./pages/buenosaires');
+    // , {aboutStartingText: buenosairesContent}
     
 })
 app.get('/cordoba', (req, res) =>{
@@ -53,7 +54,8 @@ app.get('/litoral', (req, res) =>{
     res.render('./pages/litoral', {aboutStartingText: litoralContent});
 })
 app.get('/noroeste', (req, res) =>{
-    res.render('./pages/noroeste', {aboutStartingText: noroesteContent});
+    res.render('./pages/noroeste';
+    // , {aboutStartingText: noroesteContent})
 })
 app.get('/patagonia', (req, res) =>{
     res.render('./pages/patagonia', {aboutStartingText: patagoniaContent});
