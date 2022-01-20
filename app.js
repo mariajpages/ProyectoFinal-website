@@ -36,7 +36,7 @@ app.get('/administrador', (req, res) => {
 });
 
 app.get('/destinos', (req, res) =>{
-    res.render('./destinos');
+    res.render('./pages/destinos');
 })
 
 app.get('/buenosaires', (req, res) =>{
