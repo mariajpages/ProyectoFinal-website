@@ -52,7 +52,7 @@ app.get('/cuyo', (req, res) =>{
 app.get('/litoral', (req, res) =>{
     res.render('./pages/litoral', {aboutStartingText: litoralContent});
 })
-app.get('/noereste', (req, res) =>{
+app.get('/noroeste', (req, res) =>{
     res.render('./pages/noroeste', {aboutStartingText: noroesteContent});
 })
 app.get('/patagonia', (req, res) =>{
