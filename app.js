@@ -44,7 +44,7 @@ app.get('/buenosaires', (req, res) => {
     
 })
 app.get('/cordoba', (req, res) =>{
-    res.render('./cordoba');
+    res.render('./pages/cordoba');
 })
 app.get('/cuyo', (req, res) =>{
     res.render('./pages/cuyo');
@@ -53,7 +53,7 @@ app.get('/litoral', (req, res) =>{
     res.render('./pages/litoral');
 })
 app.get('/noroeste', (req, res) =>{
-    res.render('./pages/noroeste', {aboutStartingText: noroesteContent});
+    res.render('./pages/noroeste');
     
 })
 app.get('/patagonia', (req, res) =>{
