@@ -38,9 +38,9 @@ app.get('/administrador', (req, res) => {
 app.get('./destinos', (req, res) =>{
     res.render('./pages/destinos');
 })
-
-app.get('./buenosaires', (req, res) =>{
-    res.render('./pages/buenosaires.ejs');
+ 
+app.get('./pages/buenosaires', (req, res) => {
+    res.render('./pages/buenosaires'); 
     
     
 })
