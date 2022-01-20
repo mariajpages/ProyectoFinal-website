@@ -29,7 +29,7 @@ app.get('', (req, res) =>{
 
 });
 
-app.get('./administrador', (req, res) => {
+app.get('/administrador', (req, res) => {
 
     res.render('./pages/administrador')
     
