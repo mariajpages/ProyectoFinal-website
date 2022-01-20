@@ -13,15 +13,15 @@ app.set('view engine', 'ejs');
 const publicURL = path.join(__dirname, 'public');
 
 app.use(express.static(publicURL));
-const administradorContent ="Administrador";
-// const destinosContent ="Destinos";
-// const resumenContent ="Resumen";
-const buenosairesContent ="Buenos Aires";
-const noroesteContent ="Noroeste";
-// const litoralContent ="Litoral";
-// const cuyoContent ="Cuyo";
-// const cordobaContent ="Còrdoba";
-// const patagoniaContent ="Patagonia";
+// const administradorContent ="Administrador";
+// // const destinosContent ="Destinos";
+// // const resumenContent ="Resumen";
+// const buenosairesContent ="Buenos Aires";
+// const noroesteContent ="Noroeste";
+// // const litoralContent ="Litoral";
+// // const cuyoContent ="Cuyo";
+// // const cordobaContent ="Còrdoba";
+// // const patagoniaContent ="Patagonia";
 
 
 app.get('', (req, res) =>{
@@ -40,7 +40,7 @@ app.get('./destinos', (req, res) =>{
 })
 
 app.get('./buenosaires', (req, res) =>{
-    res.render('buenosaires', {aboutStartingText: buenosairesContent});
+    res.render('/pages/buenosaires');
     
     
 })
