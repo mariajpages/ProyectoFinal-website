@@ -61,6 +61,10 @@ app.get('./patagonia', (req, res) =>{
     res.render('./pages/patagonia');
 })
 
+app.get ('/resumen', (req, res) => {
+    res.render('./pages/resumen')
+})
+
 // // Custom Modules
 // const ModalActividadModule = require('./utils/products');
 
