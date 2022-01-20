@@ -31,7 +31,7 @@ app.get('', (req, res) =>{
 
 app.get('/administrador', (req, res) => {
 
-    res.render('./pages/administrador';
+    res.render('./pages/administrador')
     
 });
 
