@@ -36,7 +36,7 @@ app.get('/administrador', (req, res) => {
 });
 
 app.get('/destinos', (req, res) =>{
-    res.render('./destinos', {aboutStartingText: buenosairesContent});
+    res.render('./destinos');
 })
 
 app.get('/buenosaires', (req, res) =>{
@@ -45,20 +45,20 @@ app.get('/buenosaires', (req, res) =>{
     
 })
 app.get('/cordoba', (req, res) =>{
-    res.render('./cordoba', {aboutStartingText: cordobaContent});
+    res.render('./cordoba');
 })
 app.get('/cuyo', (req, res) =>{
-    res.render('./pages/cuyo', {aboutStartingText: cuyoContent});
+    res.render('./pages/cuyo');
 })
 app.get('/litoral', (req, res) =>{
-    res.render('./pages/litoral', {aboutStartingText: litoralContent});
+    res.render('./pages/litoral');
 })
 app.get('/noroeste', (req, res) =>{
     res.render('./pages/noroeste');
     // , {aboutStartingText: noroesteContent})
 })
 app.get('/patagonia', (req, res) =>{
-    res.render('./pages/patagonia', {aboutStartingText: patagoniaContent});
+    res.render('./pages/patagonia');
 })
 
 // // Custom Modules
